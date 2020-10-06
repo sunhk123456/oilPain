@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .time{
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    <div class="time">10</div>
+    <script>
+          window.onload = function(){
+            var i = 10;
+            var timer = setInterval(function(){
+                if(i== -1){
+                    document.body.innerHTML = i+11;
+                    clearInterval(timer);
+                    
+                }else{
+                    document.body.innerHTML = i;
+                    --i;
+                }
+            },1000);
+        }
+
+       document.write(12312313)
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding:0;
+}
+/* 导航开始 */
+.wife{
+    width: 100%;
+    height: 80px;
+    background-color:oldlace;
+}
+.search{
+    width: 100%;
+    height: 40px;
+}
+.return{
+    color: #eb666b;
+    float: left;
+    margin-left: 30px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.search-address{
+    float: left;
+    width: 50px;
+    height: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: PingFang-SC-Bold;
+    border: 0;
+    background-color:#fafafa ;
+    border-radius: 10px 0px 0px 10px;
+    opacity: 0.8;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.line{
+    height: 36px;
+    width: 2px;
+    float: left;
+    background-color: #f2f2f2;
+    margin-top: 2px;
+}
+
+.search-text{
+    float: left;
+    border: 0;
+    background-color:#fafafa ;
+    width: 240px;
+    height: 40px;
+    color: #d9d9d9;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: PingFang-SC-Bold;
+    opacity: 0.8;
+    border-radius: 0px 10px 10px 0px ;
+ 
+}
+
+.voice{
+    position: relative;
+    left: -35px;
+    top: 10px;
+}
+
+.address{
+    position: relative;
+   left: 20px;
+   top: 10px;
+}
+
+.menu{
+    width: 100%;
+    height: 30px;
+
+}
+.one{
+    float: left;
+}
+/* 导航结束 */
