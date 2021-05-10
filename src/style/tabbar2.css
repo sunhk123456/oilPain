@@ -1,0 +1,23 @@
+html{
+    font-size: 13.333vw;
+}
+.bottom-wrap{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 0.5rem;
+    justify-content: space-between;
+    background: gainsboro;
+
+}
+.bottom-box{
+    display:block;color:  #eb666b;
+    opacity: 0.5;
+}
+.bottom-box.active {
+    opacity: 1;
+    color: red;
+
+}

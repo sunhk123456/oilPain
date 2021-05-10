@@ -1,0 +1,53 @@
+body{
+    background: #fafafa;
+}
+.banner{
+    width: 100%;
+    height: 5.86rem;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.reginbox{
+    width: 5.89rem;
+    height: 6rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -1.72rem auto 0;
+}
+.reginbox .van-form .van-field__left-icon{
+    margin-right: 0.2rem;
+}
+.reginbox .van-form{
+    width: 100%;
+    height: 3.2rem;
+    background: #fff;
+    padding: 0.36rem;
+    box-sizing: border-box;
+}
+.reginbox .van-form .van-cell{
+    float: left;
+    align-items: center;
+}
+.reginbox .van-form .van-checkbox{
+    margin-top: 3.6rem;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    opacity: 0.8;
+    font-size: 0.24rem;
+}
+.reginbox .van-form .reginbutton{
+    margin-top: 0.3rem;
+    background: #eb666b;
+    border: 0;
+    font-size: 0.3rem;
+}
+.reginbox .van-form .loginbutton{
+    margin-top: 0.3rem;
+    background: #37d6a9;
+    border: 0;
+    font-size: 0.3rem;
+}

@@ -1,0 +1,444 @@
+html {
+    font-size: 13.333vw;
+    /*background: #B3C0D1;*/
+}
+
+.back {
+    width: 90%;
+    height: 0.64rem;
+    border-radius: 0.32rem;
+
+
+}
+
+span {
+    letter-spacing: 0.01rem;
+}
+
+
+/*banner1*/
+
+
+.banner1-ju1 {
+    position: relative;
+    width: 0.98rem;
+    height: 0.98rem;
+    margin-top: 0.1rem;
+    float: right;
+    top: 0.1rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px #888888;
+    border-radius: 0.1rem;
+}
+
+.baner1-ju1-1 {
+    position: absolute;
+    right: 0;
+    width: 0.58rem;
+    height: 0.22rem;
+    background: #eb666b;
+    top: -0.1rem;
+    border-radius: 0.1rem 0.1rem 0 0.1rem;
+    text-align: center;
+
+}
+
+.baner1-ju1-1-title {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "FZCTHJW--GB1-0" !important;
+    font-size: 0.18rem !important;
+    line-height: 0.1rem;
+    letter-spacing: 0.01rem !important;
+    text-align: center;
+
+}
+
+.circle {
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 0.03rem;
+    background-color: #eb666b;
+    float: left;
+    margin-left: 0.01rem;
+
+}
+
+/*.circle:after {*/
+/*    width: 0.06rem;*/
+/*    height: 0.06rem;*/
+/*    border-radius: 0.03rem;*/
+/*    background-color: red;*/
+/*    float: left;*/
+/*    margin-left: 0.02rem;*/
+/*}*/
+
+.banner1-ju1-span {
+    width: 0.56rem;
+    height: 0.29rem;
+    margin-top: 0.20rem;
+    margin-left: 0.21rem;
+    text-align: center;
+
+}
+
+.spans {
+    font-size: 0.4rem;
+    line-height: 0.29rem;
+    letter-spacing: 0rem !important;
+}
+
+.baner1-ju1-1 span {
+    font-size: 0.4rem;
+
+}
+
+.header {
+    position: relative;
+    height: 4.58rem;
+
+    /*background:url("../../img/header/header-img2.png") no-repeat;*/
+    /*background-size:100% ;*/
+    /*background-attachment:fixed;*/
+}
+
+.header-swiper {
+    z-index: -1;
+    position: absolute;
+    background-size: 100%;
+    /*background: url("../../img/header/header-img2.png") no-repeat;*/
+
+    /*background-attachment:fixed;*/
+    width: 100%;
+    height: 100%;
+}
+
+.header .header-img1 {
+    margin-top: 0.36rem;
+    width: 6.56rem;
+    height: 0.22rem;
+    margin-left: 0.66rem;
+}
+
+.header .header-biao {
+    margin-top: 0.58rem;
+    height: 0.4rem;
+    width: 100%;
+    /*background: aqua;*/
+}
+
+.header .header-img3 {
+    width: 0.12rem;
+    height: 0.24rem;
+    float: left;
+    margin-left: 0.56rem;
+    margin-top: 0.12rem;
+}
+
+.header .header-img4 {
+
+    width: 0.42rem;
+    height: 0.40rem;
+    float: right;
+    margin-right: 0.32rem;
+}
+
+.header .header-img5 {
+
+    width: 0.42rem;
+    height: 0.40rem;
+    float: right;
+    margin-right: 0.56rem;
+
+
+}
+
+.banner1 {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0.08rem 0.08rem 0 0;
+
+
+}
+
+.banner1-container {
+
+    margin: auto;
+
+    padding: 0.5rem 0.56rem 0.7rem 0.56rem;
+}
+
+
+.banner1-container span {
+    font-family: " PingFang-SC-Bold";
+    font-size: 0.4rem;
+    letter-spacing: 0.02rem;
+}
+
+.banner1-xiushi {
+    width: 5.78rem;
+    height: 1.14rem;
+    background-color: rgb(246, 246, 246);
+    float: left;
+    margin-top: 0.4rem;
+    padding: 0.31rem 0.26rem;
+}
+
+.banner1-xiushi .banner1-xiushi-span {
+
+    line-height: 0.04rem;
+    font-size: 0.2rem;
+    letter-spacing: 0.01rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 0.16rem;
+}
+
+.banner1-ju2 {
+    width: 6.38rem;
+    height: 0.9rem;
+    float: left;
+    margin-top: 0.5rem;
+
+}
+
+.banner1-ju2:after {
+    content: "."; /*加一段内容*/
+    display: block; /*让生成的元素以块级元素显示，占满剩余空间*/
+    height: 0; /*避免生成的内容破坏原有布局高度*/
+    clear: both; /*清除浮动*/
+    visibility: hidden; /*让生成的内容不可见*/
+}
+
+.banner1-ju2-box {
+    width: 33%;
+    height: 100%;
+    position: relative;
+    float: left
+}
+
+banner1-ju2-box span {
+    letter-spacing: 0.01rem;
+}
+
+/*banner1结束*/
+/*banner2开始*/
+.banner2 {
+    margin: auto;
+    padding: 0.65rem 0.56rem 0.7rem 0.56rem;
+    height: 4.7rem;
+}
+
+.banner2-youhui-img {
+    margin-left: 0.27rem;
+    height: 0.39rem;
+    border-radius: 0.08rem;
+    border: 0.02rem solid rgba(235, 102, 107, 0.6);
+    float: left;
+    text-align: center;
+    padding: 0 0.1rem;
+}
+
+.banner2-youhui-img span {
+    color: rgb(235, 102, 107);
+    font-size: 0.2rem;
+    line-height: 0.39rem
+}
+
+.banner2-nav {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-top: 0.5rem
+}
+
+.banner2-msg {
+    float: left;
+    margin-top: 0.48rem;
+    width: 6.45rem
+}
+
+.banner2-msg span, p {
+    font-size: 0.26rem;
+    line-height: 0.5rem;
+    letter-spacing: 0.01rem;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.banner2-msg a {
+    margin-top: 0.19rem;
+    color: rgb(235, 102, 107);
+    letter-spacing: 0.01rem;
+    font-size: 0.26rem;
+    display: block
+}
+
+/*banner2结束*/
+/*banner3开始*/
+.banner3 {
+    /*margin: auto;*/
+    padding: 0.5rem 0.56rem 0.7rem 0.56rem;
+    background-color: #42b983;
+
+}
+
+.banner3-msg {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.banner3-msg1 {
+}
+.banner3-msg1:after{
+    clear: both;
+}
+.banner3-msg1-title span {
+    font-size: 0.36rem;
+}
+
+.banner3-msg1-box1 {
+    margin-top: 0.39rem;
+    margin-left: 0.8rem;
+    position: relative;
+    float: left;
+    width: 1rem;
+}
+
+banner3-msg1-box1 p {
+    display: block;
+    font-size: 0.26rem;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 1.2rem;
+    color: #000
+}
+
+.banner3-box1 {
+    position: relative;
+    margin-top: 0.93rem;
+    padding: 0.32rem 0.35rem;
+    background-color: white;
+    border-radius: 0.08rem;
+    width: 5.74rem;
+    box-shadow: 0 0.01rem 0.3rem rgba(242, 242, 242, 0.75)
+}
+
+.banner3-box-toux {
+    width: 0.87rem;
+    height: 0.87rem;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    margin-right: 0.7rem;
+}
+.banner3-box1 h1{
+    color: rgba(0,0,0,0.9);
+    font-size: 0.26rem;
+    letter-spacing: 0.01rem;
+}
+.banner3-box1 ul{
+    display: flex;
+    margin-top:0.24rem ;
+    justify-content: left;
+}
+.banner3-box1 ul li{
+    display: block;
+    background: #eb666b;
+    border-radius: 0.2rem;
+    font-size: 0.2rem;
+    margin-right:0.2rem ;
+    padding: 0.01rem 0.1rem ;
+
+}
+.banner3-box1-detail{
+    margin-top: 0.21rem;
+    padding-bottom: 0.2rem;
+    border-bottom:0.02rem solid rgba(0,0,0,0.4);
+
+}
+.banner3-box1-detail span{
+
+}
+.banner3-box1-detail .banner3-box1-span{
+    font-size: 0.20rem;
+    letter-spacing: 0.01rem;
+     color: rgba(0,0,0,0.4);
+ }
+.banner3-box1-detail .banner3-box1-span2{
+    padding: 0 0.32rem;
+    border-right:0.02rem solid rgba(0,0,0,0.3) ;
+    font-size: 0.22rem;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 0rem;
+    /*color="#ff5000"*/
+}
+.van-goods-action-icon.active{
+    color:#ff5000;
+}
+.van-goods-action-icon.active  .van-icon-star:before{
+    color:#ff5000;
+
+}
+.banner3-box1-p{
+    /*padding-top: 0.2rem;*/
+}
+.banner3-box1 .banner3-box1-p{
+    margin-top: 0.2rem;
+
+    font-size: 0.26rem;
+    letter-spacing: 0.01rem;
+    line-height: 0.31rem;
+    color: rgba(0,0,0,0.5);
+}
+.banner3-box1-box{
+    margin-top: 0.25rem;
+
+}
+.banner3-box1-a{
+
+    color: #eb666b;
+    font-size: 0.3rem;
+
+}
+/*banner3结束*/
+/*banner4开始*/
+.banner4 {
+    padding: 0.5rem;
+    padding-bottom: 10rem;
+
+}
+
+.content-wrapp {
+    width: 3rem;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 0.2rem;
+}
+
+.content-wrapp img {
+    width: 2.8rem;
+    height: 2.5rem;
+}
+.index-content .content-name{
+
+}
+.index-content .content-name span{
+    font-size: 0.32rem;
+    line-height: 0.31rem;
+    letter-spacing: 0.01rem;
+    color: #2d3544;
+}
+.content-wrapp:nth-child(2n) {
+    float: right;
+}
+.content-user .user-head span{
+    margin-right: 0.1rem;
+    font-size: 0.2rem;
+    color:#f54c48;
+}

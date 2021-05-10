@@ -1,0 +1,142 @@
+.orders{
+    padding: 0.2rem 0.5rem 2rem;
+}
+.header1{
+    display: flex;
+    justify-content: space-between;
+}
+.header1 i{
+    font-size: 0.36rem;
+    line-height: 0.4rem;
+}
+.header1 span{
+    font-size: 0.36rem;
+    letter-spacing: 0.01rem;
+
+}
+.city2{
+   padding: 0.2rem 0;
+    border-bottom: 0.01rem solid gainsboro;
+}
+.city-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.city-title span{
+    font-size: 0.26rem;
+    color: #000;
+}
+.user-info{
+    padding: 0.2rem 0.4rem;
+    border-bottom: 0.01rem solid gainsboro;
+}
+.user-info-box{
+    border: 0.03rem solid grey;
+}
+.city-time{
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: center;
+}
+.user-info-box-title{
+    text-align: center;
+    font-size: 0.32rem;
+}
+.number{
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.01rem solid gainsboro;
+}
+.phonenum{
+    border-bottom: 0.01rem solid gainsboro;
+}
+.van-cell{
+    padding:0.25rem  0 ;
+}
+.van-cell span{
+    font-size: 0.26rem;
+
+}
+
+
+
+
+
+/*discount*/
+.discount{
+
+    width: 100%;
+
+    height: 0.94rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 0.02rem solid rgba(0, 0, 0, 0.1);
+
+}
+
+.discount span{
+
+    font-size: 0.26rem;
+
+    letter-spacing: 0.01rem;
+
+    opacity: 0.8;
+
+}
+
+.discount div span:nth-child(1){
+
+    font-size: 0.2rem;
+
+    opacity: 0.4;
+
+    padding-right: 0.1rem;
+
+}
+
+.discount div span:nth-child(2){
+
+    font-size: 0.32rem;
+
+    color: #dc6e6f;
+
+}
+
+.notice{
+
+    margin-top: 0.3rem;
+
+    text-align: left;
+
+}
+
+.notice li div{
+
+    width: 1.05rem;
+
+    float: left;
+
+    opacity: 0.8;
+
+    font-size: 0.26rem;
+
+}
+
+.notice li span{
+
+    font-size: 0.26rem;
+
+    line-height: 0.4rem;
+
+    padding-left: 0.3rem;
+
+    opacity: 0.5;
+
+}

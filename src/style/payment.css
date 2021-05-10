@@ -1,0 +1,37 @@
+.colon {
+    display: inline-block;
+    margin: 0 0.04rem;
+    color: #ee0a24;
+}
+.block {
+    display: inline-block;
+    width: 0.5rem;
+    color: #fff;
+    font-size: 0.12rem;
+    text-align: center;
+    background-color: #ee0a24;
+}
+.van-count-down{
+    width: 100%;
+    text-align: center;
+}
+.pay-countdown{
+    margin-top: 0.2rem;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border: 0.02rem solid gainsboro;
+}
+.pay-countdown span{
+    font-size: 0.35rem;
+}
+.pay-info-title{
+margin-top: 0.2rem;
+}
+.pay-info-title span{
+    font-size: 0.38rem;
+    color: #575d69;
+}
+.pay-info-card{
+    margin:0.2rem 0;
+    border-bottom:0.01rem solid gainsboro ;
+}

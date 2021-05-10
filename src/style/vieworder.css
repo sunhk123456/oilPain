@@ -1,0 +1,151 @@
+.list-box1 {
+    padding: 3rem 0.5rem 0.2rem;
+}
+.nav-title{
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-box1 {
+    padding: 0.2rem 0.5rem 0.2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 969;
+    background: white;
+}
+
+.nav {
+    border-radius: 0.05rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    /*padding: 0.9rem 0.5rem;*/
+    justify-content: space-between;
+
+}
+
+.nav > li {
+    width: 1.35rem;
+    height: 0.63rem;
+    border-radius: 0.3rem;
+    font-size: 0.26rem;
+    color: #000;
+    text-align: center;
+    line-height: 0.63rem;
+
+}
+
+.li-box.active {
+    background: #eb666b;
+    box-shadow: 0 0.1rem 0.2rem rgba(235, 102, 107, 0.3);
+    color: white;
+
+
+}
+.li-box.active{
+
+}
+.nav-search{
+    padding:0rem 0.24rem ;
+    margin: 0.4rem 0;
+    width: 5.58rem;
+    height: 0.6rem;
+    background-color: #fafafa;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+
+}
+.search-box{
+    width:4.5rem;
+    border-radius:0.2rem ;
+    height: 100%;
+    border: none;
+    background-color: #fafafa;
+
+}
+
+.search button{
+    float: right;
+}
+.search button img{
+    height: 0.6rem;
+}
+.big-order{
+    margin-top: 0.64rem;
+    width: 100%;
+    height: auto;
+}
+.big-order img{
+    position: relative;
+    height: 2.52rem;
+    width: 100%;
+    border-radius: 0.08rem 0.08rem 0 0;
+}
+.big-order li{
+    box-shadow: 0rem 0.01rem 0.3rem 0rem
+    rgba(242, 242, 242, 0.75);
+    border-radius: 0.08rem;
+
+    margin-bottom: 0.5rem;
+}
+
+/*.big-order li:nth-child(1){*/
+/*    margin-top: 0;*/
+/*}*/
+
+.big-order li .info{
+    height: 2.52rem;
+    width: 100%;
+    font-size: 0.2rem;
+}
+
+.big-order li .info .fromdate,.todate{
+
+    font-size: 0.32rem;
+}
+
+.info .info-line{
+    width: 0.6rem;
+    height: 0.02rem;
+    background: white;
+}
+
+
+.big-order li .name{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.32rem;
+    line-height: 0.78rem;
+    height: 0.78rem;
+    border-bottom: 0.02rem solid #f7f7f7;
+    padding: 0 0.4rem 0;
+}
+.big-order li .buttons{
+    height: 0.96rem;
+    padding: 0.25rem 0.4rem 0;
+
+}
+.big-order li .buttons button{
+    float: right;
+    width: 1.47rem;
+    height: 0.48rem;
+    border-radius: 0.08rem;
+}
+.big-order li .buttons button:nth-child(2){
+    border: solid 0.02rem #e5e5e5;
+    font-size: 0.25rem;
+
+}
+.big-order li .buttons button:nth-child(1){
+    color: #fafafa;
+    background-color: #eb666b;
+    font-size: 0.25rem;
+
+}
+
