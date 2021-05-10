@@ -1,13 +1,20 @@
 <template>
     <div>
-        <van-swipe :autoplay="3000" class="my-swipe" indicator-color="white">
-            <van-swipe-item><img alt="" src="../../assets/firstpage/banner7.png"></van-swipe-item>
-            <van-swipe-item><img alt="" src="../../assets/firstpage/banner1.jpg"></van-swipe-item>
-            <van-swipe-item><img alt="" src="../../assets/firstpage/banner2.jpg"></van-swipe-item>
-            <van-swipe-item><img alt="" src="../../assets/firstpage/banner4.jpg"></van-swipe-item>
-            <van-swipe-item><img alt="" src="../../assets/firstpage/banner5.jpg"></van-swipe-item>
-            <van-swipe-item><img alt="" src="../../assets/firstpage/banner6.jpg"></van-swipe-item>
-        </van-swipe>
+<!--        <van-swipe :autoplay="3000" class="my-swipe" indicator-color="white">-->
+<!--            <van-swipe-item><img alt="" src="../../assets/firstpage/banner7.png"></van-swipe-item>-->
+<!--            <van-swipe-item><img alt="" src="../../assets/firstpage/banner1.jpg"></van-swipe-item>-->
+<!--            <van-swipe-item><img alt="" src="../../assets/firstpage/banner2.jpg"></van-swipe-item>-->
+<!--            <van-swipe-item><img alt="" src="../../assets/firstpage/banner4.jpg"></van-swipe-item>-->
+<!--            <van-swipe-item><img alt="" src="../../assets/firstpage/banner5.jpg"></van-swipe-item>-->
+<!--            <van-swipe-item><img alt="" src="../../assets/firstpage/banner6.jpg"></van-swipe-item>-->
+<!--                </van-swipe>-->
+                <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white" style="width:100%;height: 5rem">
+                    <van-swipe-item v-for="item in info" :key="item.sid">
+                        <img :src="IMGURL+item.sthumb" alt="" style="width: 100%;">
+                    </van-swipe-item>
+
+                </van-swipe>
+
         <div class="city">
             <div class="city-inner">
                 <div class="city-choose">
@@ -61,48 +68,52 @@
         </div>
         <div class="clearPosi"></div>
 
-        <div class="PRO" v-if="info.length">
+        <div class="PRO" v-if="info.length" style="padding-top:0.4rem ">
             <div class="proPNG"><img src="../../assets/firstpage/best-pro.png" alt=""></div>
             <div class="pro-desc"><span>每一套都是性价比优质房源</span></div>
             <van-swipe :autoplay="3000" class="my-swipe pro-banner" indicator-color="red">
-                <router-link to="/" v-for="item of info" :key="item.sid">
+                <router-link :to="{path:'details',query:{sid:item.sid}}" v-for="item of info" :key="item.sid">
                     <van-swipe-item style="backgroundColor: transparent;"><img alt="" :src="IMGURL+item.sthumb ">
                     </van-swipe-item>
-                    <div class="pro-banner-name ">{{item.sname}}</div>
+                    <div class="pro-banner-name hidden1" style="width: 3rem;">{{item.sname}}</div>
                     <div class="pro-banner-score">
                         <van-rate :value="item.score" color="#ffd21e"
                                   void-icon="star"
                                   void-color="#eee" size="0.25rem"/>
                     </div>
-                    <div class="pro-banner-area">{{item.scity}}~{{item.sarea}} <span>RMB</span>
-                        <span>{{item.sprice}}</span></div>
+                    <div class="pro-banner-area1" >{{item.scity}}~{{item.sarea}} <span style="margin-left: 1rem">RMB:</span>
+                        <span >{{item.sprice}}</span></div>
 
                 </router-link>
             </van-swipe>
         </div>
 
-        <div class="index-content" v-if="info" style="padding-bottom: 2rem">
-            <div v-for=" item in info" :key="item.sid" class="content-wrapp">
-                <router-link :to="{path:'details',query:{sid:item.sid}}">
-                <div class="content-img"><img :src="IMGURL+item.sthumb" alt=""></div>
-                <div class="content-name  hidden4" style="margin-top:0.2rem;width: 3rem;"><span>{{item.sname}}</span>
-                </div>
-                <div class="content-area" style="font-size:0.12rem;opacity:0.6">
-                    <span>{{item.scity}}~{{item.sarea}}</span></div>
-                <div class="content-comment"><span><van-rate :value="item.score" color="#ffd21e"
-                                                             void-icon="star"
-                                                             void-color="#eee" size="0.25rem"/></span></div>
-                <div class="content-user">
-                    <div class="user-head"><span style="color:red">RMB </span><span style="fontSize:0.5rem;">{{item.sprice}} </span><span> 每晚</span>
+        <div class="index-content1" v-if="info" style="padding-bottom: 2rem">
+            <div v-for=" item in info" :key="item.sid" class="content-wrapp1">
+                <router-link tag="div" :to="{path:'details',query:{sid:item.sid}}">
+                    <div class="content-img1"><img :src="IMGURL+item.sthumb" alt=""></div>
+                    <div class="content-name " style="margin-top:0.2rem;width: 3rem;">
+                        <span class=" hidden1">{{item.sname}}</span>
                     </div>
+                    <div class="content-area">
+                        <span  style="font-size:0.12rem;opacity:0.6">{{item.scity}}~{{item.sarea}}</span></div>
+
+                    <div class="content-comment1">
+                        <span><van-rate :value="item.score" color="#ffd21e"
+                                        void-icon="star"
+                                        void-color="#eee" size="0.25rem"/>
+                        </span>
+                    </div>
+                    <div class="content-user">
+                        <div class="user-head"><span style="color:red">RMB </span><span style="fontSize:0.5rem;">{{item.sprice}} </span><span> 每晚</span>
+                        </div>
 
 
-                </div>
+                    </div>
                 </router-link>
             </div>
 
         </div>
-        <!--  <tabbar :index="1"></tabbar>-->
         <tabbar2 :index="1"></tabbar2>
     </div>
 </template>
@@ -132,7 +143,7 @@
                 instance.get("/api/stayhome").then(res => {
 
                     this.info = res.data;
-                    //console.log(this.info)
+                    console.log(this.info)
 
                 }).catch(error => {
                     alert(error);
@@ -170,7 +181,12 @@
 
     }
 </script>
+<style>
+    .van-swipe__indicators{
+        bottom: 1rem;
 
+    }
+</style>
 <style scoped>
     @import "../../style/css/rem.css";
     @import "../../style/firstpage.css";

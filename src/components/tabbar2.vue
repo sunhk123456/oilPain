@@ -1,20 +1,25 @@
 <template>
-    <div class="bottom">
+    <div class="boxabc">
 
         <div class="bottom-wrap" style="text-align: center">
-            <router-link to="#"  class="bottom-left" style="display:block;color: red" :class="index===1?'active':''"><i
-                    class="iconfont icon-shouye" style="font-size: 1rem"></i>
-                <div><span style="color: #eb666b">首页</span></div>
+            <router-link :to="{path:'/'}"  class="bottom-box" style="" :class="{active:index==1?true:''}"><i
+                    class="iconfont icon-shouye" style="font-size: 0.65rem"></i>
+                <div><span style="color: #eb666b;font-size: 0.28rem">首页</span></div>
 
             </router-link>
-            <router-link to="#"  class="bottom-center" style="display:block;color: red" :class="index===2?'active':''"><i
-                    class="iconfont icon-yanjing" style="font-size: 0.9rem"></i>
-                <div><span style="color: #eb666b;text-align: center">视界</span></div>
+            <router-link to="#"  class="bottom-box" style="" :class="{active:index==2?true:''}"><i
+                    class="iconfont icon-yanjing" style="font-size: 0.65rem"></i>
+                <div><span style="color: #eb666b;font-size: 0.28rem">视界</span></div>
 
             </router-link>
-            <router-link to="#" class="bottom-right" style="display:block;color: red" :class="index===3?'active':''"><i
-                    class="iconfont icon-wode" style="font-size: 0.9rem"></i>
-                <div><span style="color: #eb666b">我的</span></div>
+            <router-link :to="{path:'/lists'}" class="bottom-box" style="" :class="{active:index==3?true:''}"><i
+                    class="iconfont icon-yanjing" style="font-size: 0.65rem"></i>
+                <div><span style="color: #eb666b;font-size: 0.28rem">列表</span></div>
+
+            </router-link>
+            <router-link :to="{path:'/my'}"  class="bottom-box" style="" :class="{active:index==4?true:''}"><i
+                    class="iconfont icon-wode" style="font-size: 0.65rem"></i>
+                <div><span style="color: #eb666b;font-size: 0.28rem">我的</span></div>
             </router-link>
         </div>
     </div>
@@ -24,6 +29,10 @@
     import "../style/icon/iconfont.css"
     export default {
         name: "tabbar2",
+        data(){
+            return {
+            }
+        },
         props: {
             index: {
                 type: Number,
@@ -31,17 +40,23 @@
 
             }
         },
+        computed:{
+
+        },
         methods:{
             changeIndex(){
-                let index=2;
-                console.log("222");
-                this.$emit("changeIndex",index);
+                console.log(this.index);
             }
+        },
+        mounted() {
+          this.changeIndex();
+            // console.log(this.index);
         }
     }
 </script>
 
-<style>
-    /*@import "../style/firstpage.css";*/
+<style scoped>
+
+@import url(../style/tabbar2.css);
     /*@import "http://at.alicdn.com/t/font_2113910_mwxt4s52y0d.css";*/
 </style>

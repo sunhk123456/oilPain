@@ -32,7 +32,10 @@
         justify-content: space-between;
         padding: 0 0.5rem  ;
         bottom:0; /* 必要 */
-        width: calc(100% - 1rem) ;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100% ;
         z-index: 9999;
         background-color: pink;
 

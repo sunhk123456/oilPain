@@ -1,6 +1,7 @@
 import axios from "axios";
 import {Message} from "element-ui";
 import {URL, SUCCESS} from "../lib/base";
+import store from "@/store"
 
 SUCCESS
 Message
@@ -10,7 +11,7 @@ const instance = axios.create({
 });
 // Add a request interceptor 请求拦截
 instance.interceptors.request.use(function (config) {
-    let token = sessionStorage.getItem('token')
+    let token =store.state.token;
     config.headers = Object.assign(config.headers, {token, 'Recry-after': 3600})
     return config;
 }, function (error) {

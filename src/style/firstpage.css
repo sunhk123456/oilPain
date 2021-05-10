@@ -187,7 +187,6 @@ right: 0rem;
 }
 .proPNG{                 
     width: 1.62rem;
-    height: 0.356rem;
     margin-bottom: 0.07rem;
 }
 .pro-desc{
@@ -246,18 +245,18 @@ right: 0rem;
     margin-top: 0.12rem;
     margin-left: 0.46rem;
 }
-.pro-banner-area{
+.pro-banner-area1{
     margin-left: 0.46rem;
     color: #ececec;
 }
-.pro-banner-area span:nth-child(1){
+.pro-banner-area1 span:nth-child(1){
   margin-left: 1.8rem;
   font-size: 0.14rem;
   color: aliceblue;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.pro-banner-area span:nth-child(2){
+.pro-banner-area1 span:nth-child(2){
     color: aliceblue;
    font-size: 0.5rem;
   }
@@ -269,7 +268,7 @@ right: 0rem;
 }
 
 
-.index-content {
+.index-content1 {
 
     overflow: hidden;
     margin: 0 0.56rem;
@@ -278,10 +277,10 @@ right: 0rem;
     justify-content: space-between;
     
 }
-.content-wrapp{
+.content-wrapp1{
     margin-bottom: 0.5rem;
 }
-.content-img {
+.content-img1 {
     width: 3.00rem;
     height: 2.28rem;
     background-color: black;
@@ -291,14 +290,13 @@ right: 0rem;
 
     height: 0.31rem;
     font-size: 0.32rem;
-    margin-bottom: 0.22rem;
 
 }
 .user-head{
   
 }
 
-.content-comment {
+.content-comment1 {
     margin-top: 0.15rem;
     width: 2.87rem;
     height: 0.3rem;
@@ -313,8 +311,6 @@ right: 0rem;
     display: flex;
 }
 
-
-
 .user-name {
     font-size: 0.26rem;
     opacity: 0.6;
@@ -325,35 +321,10 @@ right: 0rem;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-img {
+.content-wrapp1 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 5px;
 }
-.bottom{
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-   /*  margin: 0 auto; */
-   padding: 0 0.8rem 0 ;
-   
-    background-color: #eeeeee;
-    z-index: 100;
-    
-    
-}
-.bottom i{
-    font-size: 0.75rem;
-}
-.bottom-wrap{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-.bottom active{
-    color: red;
-}
-
